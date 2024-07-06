@@ -8,6 +8,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        
     </head>
     <body>
         <div class="container-fixed jumbotron text-center">
@@ -16,12 +18,18 @@
         <div class="container todo-list-container">
             <div class="add-task-bar row">
                 <div class="col-md-10">
-                    <input type="text" name="task" class="form-control input-lg">
+                    <input type="text" name="task" class="form-control input-lg" id="task-input">
                 </div>
                 <div class="col-md-2">
-                    <button class="btn-lg"><span class="glyphicon glyphicon-plus"></span></button>
+                    <button onclick="addTask()" class="btn-lg"><span class="glyphicon glyphicon-plus"></span></button>
+                </div>
+            </div>
+            <div class="task container">
+                <div class="task-text text-center">
+                    <p>Task</p>
                 </div>
             </div>
         </div>
+
     </body>
 </html>
