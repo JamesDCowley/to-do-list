@@ -6,7 +6,7 @@ function addTask(){
     const task = document.createElement('div');
     task.className = 'task text-center';
     task.innerHTML = `
-        <p>${taskInput.value}</p>
+        <p id="task-text" onclick="this.parentElement.remove()" onmouseover="this.style.textDecoration = 'line-through'" onmouseout="this.style.textDecoration = ''">${taskInput.value}</p>
     `;
     taskList.appendChild(task);
 }
