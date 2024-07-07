@@ -4,3 +4,6 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(49, 46, 46, 0.47);
 }
+.task-text{
+    font-size: 20px;
+}
